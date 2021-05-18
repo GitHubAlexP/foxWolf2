@@ -1,5 +1,5 @@
 
-public class DeleteFileMethod {
+public class FileDeleting {
 
     public static void main(String[] args) {
 
@@ -12,4 +12,5 @@ public class DeleteFileMethod {
         }
 
     }
+
 }
