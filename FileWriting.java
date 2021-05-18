@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 
 public class FileWriting {
 
@@ -5,7 +6,9 @@ public class FileWriting {
 
         // WRITE IN FILE
         try {
+
             FileWriter myWriter = new FileWriter("filename.md");
+
             myWriter.write("# Java API's");
             myWriter.write("\n\nFileReader");
             myWriter.write("\nBufferedReader");
@@ -16,11 +19,14 @@ public class FileWriting {
             myWriter.write("\nBufferedWriter");
             myWriter.write("\nFileOutputStream\n");
             myWriter.close(); // REMEMBER TO CLOSE
+
             System.out.println("Successfully wrote to the file.");
+            
         } catch (Exception e) {
+
             System.out.println("An error ocurred.");
             e.printStackTrace();
-        }
 
+        }
     }
 }
