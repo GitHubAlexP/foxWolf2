@@ -6,12 +6,11 @@ public class FileDeleting {
 
         // DELETE FILE
         File myFile = new File("filename.md");
-        if (myFile.delete()) {
+        
+        if (myFile.delete())
             System.out.println("File deleted: " + myFile.getName());
-        } else {
+        else
             System.out.println("Failed to delete the file.");
-        }
 
     }
-
 }
