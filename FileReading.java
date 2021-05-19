@@ -6,8 +6,8 @@ public class FileReading {
     public static void main(String[] args) {
 
         // READ A FILE
-        try {
-            
+        try 
+        {    
             File myFile = new File("filename.md");
             Scanner myReader = new Scanner(myFile);
 
@@ -17,8 +17,9 @@ public class FileReading {
             }
 
             myReader.close(); // REMEMBER TO CLOSE
-
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
